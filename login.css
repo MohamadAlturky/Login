@@ -46,10 +46,27 @@ body {
     margin: 15px 0 10px;
 }
 
+.toggle-container {
+    transition: all 0.9s;
+}
+
+.img-logo-1 {
+    transform: scale(0.6);
+    transition: all 0.5s;
+}
 
 @media screen and (max-width: 1080px) {
     .toggle-container {
-        display: none;
+        width: 0px;
+    }
+
+    .toggle {
+        width: 0px !important;
+        transform: translateX(1000px) !important;
+    }
+
+    .img-logo-1 {
+        opacity: 0;
     }
 
     .sign-in {
